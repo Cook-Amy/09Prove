@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h2>Postal Rate Calculator</h2>
+    </div> <!-- class "jumbtron" -->
+  </div> <!-- class "container" -->
+
+  <div class="container">
+    <div class="jumbotron">
+    
+      <form class="form-horizontal" method="POST" action="/getRate">
+        <div class="form-group">
+          <label class="control-label col-sm-3" for="weight">Weight: <div>(up to 13oz)</div></label>
+          <div class="col-sm-3">
+            <input type="number" step="0.1" min="0" max="13" class="form-control" id="weight" name="weight" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-3" for="type">Type:</label>
+          <div class="col-sm-5">
+            <div class="radio">
+              <label><input type="radio" name="type" value="letters-stamped">Letters (Stamped)</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="type" value="letters-metered">Letters (Metered)</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="type" value="lg-envelope">Large Envelope (Flats)</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="type" value="first-class">First-Class Package Service--Retail</label>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+
+      </form> 
+
+    
+    </div> <!-- class "jumbtron" -->
+  </div> <!-- class "container" -->
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "09prove",
+  "version": "1.0.0",
+  "description": "09 Prove Postal Rate Calculator",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acook77/09Prove.git"
+  },
+  "author": "Amy Cook",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acook77/09Prove/issues"
+  },
+  "homepage": "https://github.com/acook77/09Prove#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
