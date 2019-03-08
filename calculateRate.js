@@ -2,6 +2,7 @@ function rate(weight, type, zip) {
 
   console.log("function rate() called");
 
+  // call the correct function based on type of mail
   var rate = 0;
   switch (type) {
     case "letters-stamped":
@@ -20,12 +21,13 @@ function rate(weight, type, zip) {
       console.log("No type selected");
   }
 
+  // format rate for currency
   var formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
   });
-
   rate = formatter.format(rate);
+
   return rate;
 }
 
@@ -160,6 +162,7 @@ function rate(weight, type, zip) {
     console.log("function firstClass() called");
     var price;
 
+    // determine the zone based on zip code
     var zone = getZone(zip);
     console.log("Zone = " + zone);
 
@@ -297,7 +300,7 @@ function rate(weight, type, zip) {
 
   }
 
-  /**** determine the zip code zone for packages ****/
+  /**** zip code zone for packages mailed from 27540 ****/
   function getZone(zip) {
 
     console.log("function getZone() called");
@@ -424,6 +427,7 @@ function rate(weight, type, zip) {
     else if ((zip >= "96900" && zip <= "96999") ) {
       zone = 9;
     }
+    // invalid zip codes are not checked at this time
     else {
       zone = 1;
     }
