@@ -32,7 +32,7 @@ function rate(weight, type, zip) {
 }
 
 
-  /**** Stamped Letter prices ****/
+  /****** Stamped Letter prices ******/
   function lettersStamped(weight) {
 
     console.log("function lettersStamped() called");
@@ -63,7 +63,7 @@ function rate(weight, type, zip) {
     return price;
   }
 
-  /**** Metered Lettered Prices ****/
+  /****** Metered Lettered Prices ******/
   function lettersMetered(weight) {
 
     console.log("function lettersMetered() called");
@@ -94,7 +94,7 @@ function rate(weight, type, zip) {
     return price;
   }
 
-  /**** Large Envelope Prices ****/
+  /****** Large Envelope Prices ******/
   function largeEnvelope(weight) {
 
     console.log("function largeEnvelope() called");
@@ -156,7 +156,7 @@ function rate(weight, type, zip) {
     return price;
   }
 
-  /**** First Class Package Prices ****/
+  /****** First Class Package Prices ******/
   function firstClass(weight, zip) {
 
     console.log("function firstClass() called");
@@ -300,7 +300,7 @@ function rate(weight, type, zip) {
 
   }
 
-  /**** zip code zone for packages mailed from 27540 ****/
+  /****** zip code zone for packages mailed from 27540 ******/
   function getZone(zip) {
 
     console.log("function getZone() called");
