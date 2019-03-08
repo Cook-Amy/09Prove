@@ -32,17 +32,24 @@
           <label class="control-label col-sm-3" for="type">Type:</label>
           <div class="col-sm-5">
             <div class="radio">
-              <label><input type="radio" name="type" value="letters-stamped">Letters (Stamped)</label>
+              <label><input type="radio" name="type" value="letters-stamped" required>Letters (Stamped)</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="type" value="letters-metered">Letters (Metered)</label>
+              <label><input type="radio" name="type" value="letters-metered" required>Letters (Metered)</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="type" value="lg-envelope">Large Envelope (Flats)</label>
+              <label><input type="radio" name="type" value="lg-envelope" required>Large Envelope (Flats)</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="type" value="first-class">First-Class Package Service--Retail</label>
+              <label><input type="radio" name="type" value="first-class" required>First-Class Package Service--Retail</label>
             </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-3" for="zip">Destination Zip Code</label>
+          <div class="col-sm-3">
+            <input type="text" pattern="[0-9]{5}" class="form-control" id="zip" name="zip" required>
           </div>
         </div>
 
